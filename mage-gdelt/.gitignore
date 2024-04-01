@@ -172,8 +172,5 @@ scratch*
 your-first-project
 
 #
-demo_project/
-mage_data/
-GDELT-Project/mage/GDELT-events-analysis/__pycache__
-GDELT-Project/mage/GDELT-events-analysis/.file_versions
-GDELT-Project/mage/GDELT-events-analysis/.ssh_tunnel
+*gcp.json
+GDELT-events-analysis/.ssh_tunnel
