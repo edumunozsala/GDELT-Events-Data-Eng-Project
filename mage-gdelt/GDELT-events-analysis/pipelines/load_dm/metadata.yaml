@@ -1,0 +1,109 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dbt_project_name: dbt/gdelt_events
+    file_path: dbt/gdelt_events/models/core_dm/dim_actor_types.sql
+    file_source:
+      path: dbt/gdelt_events/models/core_dm/dim_actor_types.sql
+      project_path: dbt/gdelt_events
+    limit: 1000
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/gdelt_events/models/core_dm/dim_actor_types
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks: []
+  uuid: dbt/gdelt_events/models/core_dm/dim_actor_types
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dbt_project_name: dbt/gdelt_events
+    file_path: dbt/gdelt_events/models/core_dm/dim_event_codes.sql
+    file_source:
+      path: dbt/gdelt_events/models/core_dm/dim_event_codes.sql
+      project_path: dbt/gdelt_events
+    limit: 1000
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/gdelt_events/models/core_dm/dim_event_codes
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks: []
+  uuid: dbt/gdelt_events/models/core_dm/dim_event_codes
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dbt_project_name: dbt/gdelt_events
+    file_path: dbt/gdelt_events/models/core_dm/fact_events_actor_type.sql
+    file_source:
+      path: dbt/gdelt_events/models/core_dm/fact_events_actor_type.sql
+      project_path: dbt/gdelt_events
+    limit: 1000
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/gdelt_events/models/core_dm/fact_events_actor_type
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks: []
+  uuid: dbt/gdelt_events/models/core_dm/fact_events_actor_type
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dbt_project_name: dbt/gdelt_events
+    file_path: dbt/gdelt_events/models/core_dm/fact_events_event_code.sql
+    file_source:
+      path: dbt/gdelt_events/models/core_dm/fact_events_event_code.sql
+      project_path: dbt/gdelt_events
+    limit: 1000
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/gdelt_events/models/core_dm/fact_events_event_code
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks: []
+  uuid: dbt/gdelt_events/models/core_dm/fact_events_event_code
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-04-03 12:07:26.243891+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: load_dm
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: load_dm
+variables_dir: /home/src/mage_data/GDELT-events-analysis
+widgets: []

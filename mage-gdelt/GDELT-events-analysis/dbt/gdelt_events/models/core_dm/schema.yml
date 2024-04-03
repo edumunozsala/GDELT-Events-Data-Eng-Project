@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: dim_actor_types
+  - name: dim_event_codes
+  - name: fact_events_actor_type
+  - name: fact_events_event_code

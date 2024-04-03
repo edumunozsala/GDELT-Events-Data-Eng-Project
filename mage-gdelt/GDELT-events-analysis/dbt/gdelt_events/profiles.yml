@@ -1,0 +1,10 @@
+# https://docs.getdbt.com/docs/core/connect-data-platform/profiles.yml
+gdelt_events:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: gdelt-project-data
+      dataset: gdelt_events
+      keyfile: /home/src/personal-gcp.json
