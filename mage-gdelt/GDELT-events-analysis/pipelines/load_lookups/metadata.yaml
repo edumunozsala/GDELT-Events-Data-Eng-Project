@@ -35,7 +35,8 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks: []
+  downstream_blocks:
+  - run_staging_dm
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -48,6 +49,22 @@ blocks:
   upstream_blocks:
   - read_lookups
   uuid: export_df_gcs
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: run_staging_dm
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - export_df_gcs
+  uuid: run_staging_dm
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}

@@ -9,7 +9,7 @@ with agg_events as
     select
         -- identifiers
         week,
-        SQLDATE ,
+        PARSE_DATE("%Y%m%d", Cast(SQLDATE AS String)) as SQLDATE,
         Actor1Type1Code,
         Actor2Type1Code,
         count(1) as num_events,
@@ -18,7 +18,10 @@ with agg_events as
         sum(NumSources) as num_sources
     from {{ env_var('DATASET') }}.events
     where Actor1Type1Code is not null 
-    group by week,SQLDATE,Actor1Type1Code,Actor2Type1Code
+    group by week,
+             PARSE_DATE("%Y%m%d", Cast(SQLDATE AS String)),
+             Actor1Type1Code,
+             Actor2Type1Code
 )
 select  week,
         SQLDATE ,

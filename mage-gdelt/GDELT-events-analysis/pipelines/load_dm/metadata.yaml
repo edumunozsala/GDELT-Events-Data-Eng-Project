@@ -57,7 +57,7 @@ blocks:
   language: sql
   name: dbt/gdelt_events/models/core_dm/fact_events_actor_type
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: dbt
   upstream_blocks: []

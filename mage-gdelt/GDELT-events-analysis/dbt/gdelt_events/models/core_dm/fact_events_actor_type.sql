@@ -10,7 +10,7 @@ facts_event as (
     from {{ ref('stg_events_types') }}
 )
 select  week,
-        SQLDATE ,
+        SQLDATE,
         source_actor_type.type_name as source_type_name,
         dest_actor_type.type_name as dest_type_name,
         num_events,

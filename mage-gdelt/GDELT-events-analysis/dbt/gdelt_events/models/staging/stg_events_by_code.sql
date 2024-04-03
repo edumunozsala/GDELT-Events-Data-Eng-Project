@@ -9,7 +9,7 @@ with agg_events_by_code as
     select
         -- identifiers
         week,
-        SQLDATE ,
+        PARSE_DATE("%Y%m%d", Cast(SQLDATE AS String)) as SQLDATE,
         EventRootCode,
         EventBaseCode,
         EventCode,
@@ -20,7 +20,7 @@ with agg_events_by_code as
     from {{ env_var('DATASET') }}.events
     where EventRootCode is not null 
     group by week,
-            SQLDATE,
+            PARSE_DATE("%Y%m%d", Cast(SQLDATE AS String)),
             EventRootCode,
             EventBaseCode,
             EventCode
