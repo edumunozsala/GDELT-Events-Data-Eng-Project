@@ -159,7 +159,7 @@ Click on run@nce:
 
 Go to logs to watch how the process advance, when a pipeline finish the next one is automatically launch. Open every pipeline to see the logs.
 
-**It takes about 15-20 minutes to download and move to Cloud Storage all the csv files, 4,300, and about 10 minutos to process them and create the dataframes and tables. Finally, the tables and views in our dimensional data warehouse for reporting take about 3-4 minutes. **
+**It takes about 15-20 minutes to download and move to Cloud Storage all the csv files, 4,300, and about 10 minutos to process them and create the dataframes and tables. Finally, the tables and views in our dimensional data warehouse for reporting take about 3-4 minutes.**
 
 14. Once the workflow has finished you can go to the dashboard on [Looker Studio](https://lookerstudio.google.com/reporting/f1018a56-01ea-422b-8c40-ea9b1a87ee01)
 
