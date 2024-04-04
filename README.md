@@ -60,7 +60,7 @@ Once our data is in a data warehouse in the **Gold stage**, we use [dbt software
 
 We build and run our workflow in ***Mage** and use **Apache Spark** to manage and transform all data efficiently from source to Bronze to Gold stages.Each numbered step corresponds to a **Pipeline** in Mage, and each pipeline triggers the next one in the flow.  The steps 5 and 6 are **dbt** models and process to get our dimensional model (only for our report needs).
 
-A detailed explanation on the pipelines, blocks and code is on the folder `mage-code`, [README](mage_code/README.md).
+A detailed explanation on the pipelines, blocks and code is on the folder `mage-code`, [README](mage-code/README.md).
 
 ## To Run the Demo
 You can clone this repo and run the **Docker** container in your preferred environment to launch Mage with Spark and execute the Workflow. For example, you can run the container in a VM in GCP, a GitHub Codespace, in Google Cloud Run or even in your local machine.
