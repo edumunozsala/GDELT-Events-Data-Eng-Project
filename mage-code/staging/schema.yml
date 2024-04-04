@@ -1,0 +1,8 @@
+
+version: 2
+
+models:
+  - name: stg_actor_type
+  - name: stg_event_codes
+  - name: stg_events_types
+  - name: stg_events_by_code
